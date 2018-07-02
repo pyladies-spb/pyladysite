@@ -4,7 +4,7 @@ python:
 install:
   - pip install -r generated/requirements.txt
 script:
-  - cd generated && mynt gen -f /_site
+  - cd generated && mynt gen -f _site
 deploy:
   provider: heroku
   api_key:
