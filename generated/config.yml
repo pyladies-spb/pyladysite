@@ -1,0 +1,38 @@
+base_url: /
+domain: spb.pyladies.com
+author: A PyLady
+subtitle: Women Who Love Coding in Python
+title: PyLadies
+post_limit: 1
+date_format: "%B %d, %Y"
+posts_url: /blog/<title>/
+analytics: UA-121707928-1
+feed: true
+social:
+    github: https://github.com/pyladies-spb
+archive_layout: archive.html
+archives_url: /archives/
+jinja:
+    extensions:
+        - jinja2.ext.loopcontrols
+tag_layout: tag.html
+tags_url: /tags/
+misaka:
+    render_flags:
+        toc: true
+partners:
+    - name:      PyLadies
+      url:  http://pyladies.com
+      img: PyLadies.png
+
+    - name:      Piter.Py Meetup
+      url:  http://meetup.piterpy.com
+      img: Piter.Py Meetup.png
+
+    - name:      Django Girls Spb
+      url:  https://djangogirls.org/spb/
+      img: django-girls.jpg
+
+    - name:    DataArt
+      url:  https://www.dataart.ru/
+      img: DataArt.png      

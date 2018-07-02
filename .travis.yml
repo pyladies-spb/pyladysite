@@ -1,0 +1,15 @@
+language: python
+python:
+  - "2.7"
+install:
+  - pip install -r generated/requirements.txt
+script:
+  - cd generated && mynt gen -f _site
+deploy:
+  provider: heroku
+  api_key:
+    secure: "O3pGWQpywDurRFt7w6DAT2rOvl80G+vX8HEHQ1jZhH/KMx+0BiVqHPPMYBhPwJ5gtC/alPVNfU7DmKww3mKBWril1IAPgRxSITdbEEr6NQHTzJfhYWDCQLCFKiG3eAvsGgGQfW01BUIwgoyHVW55kWTN18ug6So3EGlPxqTxJJkJdqS1nSrQfFYWgz2Zm6+KJKwNzNvTNqSmk3yr8ZA+yrraqMeWzdXT4rm957XA78D92FmIxAAEFvoYgI0KYKkFcc8txu4Q0fN3erES4mCPd2uK848302ld/zWpvmt6pT1A+2HWRbOBUFIZx1ArTBVrc2XaifMKGLYDae6S4/eWFJkXBIcfvSLslDP3iblRqrwXoMXWSVAQAIXzK1a8IgJnSCdfmEQbzkfQFll9tHiNM2lgc8zZxKUDA9lg+0Zdojre7dmPB0RRsPLCqzdVIk+kV8by/5bVjeDCJ2EP6lvrT3r+2fA5/LDsztuuE4SWf1Gwj4Hgp0+1rkNQVa8wtMTecxOlx1NHuDFy+tkL3dOeND4XOARakTJyIoiFpa5Cu2ZvSvvF8iW7XgqrFeDy7oOp9D/dYPW7p6peZ8jf2NhRc3HYbFg4TJlQ10+FShypUSOya6/meL9/Edfhy7cmjcwDYSDFplbmKm6l9OLB21OSizrlMIWdmum6Srdvys1nQxg="
+  skip_cleanup: true
+  app:
+    feature/2-mynt: stpetersburg
+
