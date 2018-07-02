@@ -20,3 +20,19 @@ tags_url: /tags/
 misaka:
     render_flags:
         toc: true
+partners:
+    - name:      PyLadies
+      url:  http://pyladies.com
+      img: PyLadies.png
+
+    - name:      Piter.Py Meetup
+      url:  http://meetup.piterpy.com
+      img: Piter.Py Meetup.png
+
+    - name:      Django Girls Spb
+      url:  https://djangogirls.org/spb/
+      img: django-girls.jpg
+
+    - name:    DataArt
+      url:  https://www.dataart.ru/
+      img: DataArt.png      
