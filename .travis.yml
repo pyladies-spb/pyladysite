@@ -1,0 +1,14 @@
+language: python
+python:
+  - "2.7"
+install:
+  - pip install -r generated/requirements.txt
+script:
+  - mynt gen -f generated/_site
+deploy:
+  provider: heroku
+  api_key:
+    secure: ""
+  skip_cleanup: true
+  app:
+    2-mynt: my-app-staging
