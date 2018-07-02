@@ -1,14 +1,32 @@
-var express = require('express');
-var app = express();
+var http = require('http')
+var url = require('url')
+var fs = require('fs')
+var path = require('path')
+var baseDirectory = '_site'   
 
-var newBaseURL = process.env.NEW_BASE_URL || 'http://example.com';
-var redirectStatus = parseInt(process.env.REDIRECT_STATUS || 302);
-var port = process.env.PORT || 5000;
+var port = 9615
 
-app.get('*', function(request, response) {
-  response.redirect(redirectStatus, newBaseURL + request.url);
-});
+http.createServer(function (request, response) {
+    try {
+        var requestUrl = url.parse(request.url)
 
-app.listen(port, function() {
-  console.log("Listening on " + port);
-});
+        // need to use path.normalize so people can't access directories underneath baseDirectory
+        var fsPath = baseDirectory+path.normalize(requestUrl.pathname)
+
+        var fileStream = fs.createReadStream(fsPath)
+        fileStream.pipe(response)
+        fileStream.on('open', function() {
+             response.writeHead(200)
+        })
+        fileStream.on('error',function(e) {
+             response.writeHead(404)     // assume the file doesn't exist
+             response.end()
+        })
+   } catch(e) {
+        response.writeHead(500)
+        response.end()     // end the response so browsers don't hang
+        console.log(e.stack)
+   }
+}).listen(port)
+
+console.log("listening on port "+port)

@@ -1,0 +1,29 @@
+base_url: /
+domain: spb.pyladies.com
+author: A PyLady
+subtitle: Women Who Love Coding in Python
+title: PyLadies
+post_limit: 1
+date_format: "%B %d, %Y"
+posts_url: /blog/<title>/
+analytics: UA-36930002-1
+feed: true
+social:
+    github: https://github.com/pyladies-spb
+archive_layout: archive.html
+archives_url: /archives/
+jinja:
+    extensions:
+        - jinja2.ext.loopcontrols
+tag_layout: tag.html
+tags_url: /tags/
+misaka:
+    render_flags:
+        toc: true
+
+faq: 
+  -question: Вопрос 1,
+  answer: Ответ 1
+
+  -question: Вопрос 1,
+  answer: Ответ 1
