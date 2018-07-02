@@ -6,7 +6,7 @@ title: PyLadies
 post_limit: 1
 date_format: "%B %d, %Y"
 posts_url: /blog/<title>/
-analytics: UA-36930002-1
+analytics: UA-121707928-1
 feed: true
 social:
     github: https://github.com/pyladies-spb
@@ -20,10 +20,3 @@ tags_url: /tags/
 misaka:
     render_flags:
         toc: true
-
-faq: 
-  -question: Вопрос 1,
-  answer: Ответ 1
-
-  -question: Вопрос 1,
-  answer: Ответ 1

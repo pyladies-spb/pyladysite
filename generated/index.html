@@ -7,18 +7,20 @@
             <div id="welcome_message">
                     <h2>Добро пожаловать!</h2>
                     <img src="{{ get_asset('images/pylady_geek.png') }}" alt="Pyladies lady graphic" />
-                    <p>We are an international mentorship group with a focus on helping more women become active participants and leaders in the Python open-source community. Our mission is to promote, educate and advance a diverse Python community through outreach, education, conferences, events and social gatherings.</p>
-                    <p>PyLadies also aims to provide a friendly support network for women and a bridge to the larger Python world. Anyone with an interest in Python is encouraged to participate!</p>
+                    {% for post in posts %}
+                        {% if 'about' in post.category %}
+                        {{ post.content }}
+                       {% endif %}
+                  {% endfor %}
             </div>
             <div class="sidebar">
 
-        <div id="shirts_btn" style="display:flex;justify-content:center;align-items:center;font-size:14px;"><a href="http://pyladies.spreadshirt.com/">Timepad</a></div>
+        <div id="shirts_btn" style="display:flex;justify-content:center;align-items:center;font-size:14px;"><a href="https://pyladies-spb.timepad.ru">Timepad</a></div>
 
-        <div id="stickers_btn" style="display:flex;justify-content:center;align-items:center;font-size:14px;"><a href="https://www.stickermule.com/user/1070441144/stickers">Facebook</a></div>
-        <div id="shirts_btn" style="display:flex;justify-content:center;align-items:center;font-size:14px;"><a href="http://pyladies.spreadshirt.com/">Twitter</a></div>
-
-        <div id="stickers_btn" style="display:flex;justify-content:center;align-items:center;font-size:14px;"><a href="https://www.stickermule.com/user/1070441144/stickers">Vkontakte</a></div>
-        <div id="stickers_btn" style="display:flex;justify-content:center;align-items:center;font-size:14px;"><a href="mailto:info@pyladies.com?subject=Hello" id="contact-link">Email</a></div>
+        <div id="stickers_btn" style="display:flex;justify-content:center;align-items:center;font-size:14px;"><a href="https://www.facebook.com/groups/pyladies.spb/">Facebook</a></div>
+        <div id="shirts_btn" style="display:flex;justify-content:center;align-items:center;font-size:14px;"><a href="https://twitter.com/pyladies_spb">Twitter</a></div>
+        <div id="stickers_btn" style="display:flex;justify-content:center;align-items:center;font-size:14px;"><a href="https://vk.com/pyladies_spb">Vkontakte</a></div>
+        <div id="stickers_btn" style="display:flex;justify-content:center;align-items:center;font-size:14px;"><a href="mailto:spb@pyladies.com?subject=Hello" id="contact-link">Email</a></div>
 
     </div>
         </article>
