@@ -9,9 +9,8 @@ var port = 9615
 http.createServer(function (request, response) {
     try {
         var requestUrl = url.parse(request.url)
-
         // need to use path.normalize so people can't access directories underneath baseDirectory
-        var fsPath = baseDirectory+path.normalize(requestUrl.pathname)
+        var fsPath = baseDirectory+path.normalize(requestUrl.pathname+"/index.html")
 
         var fileStream = fs.createReadStream(fsPath)
         fileStream.pipe(response)
