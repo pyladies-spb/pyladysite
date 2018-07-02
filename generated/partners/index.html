@@ -3,9 +3,9 @@
 {% block content %}
     <section id="archive">
     <h2>Наши партнеры</h2>
-        <article>
+        <article style="display: flex; flex-wrap: wrap;">
         	{% for partner in site.partners%}
-        	<a style="display: block; border-bottom:none;" href="{{partner.url}}"><img style="width: auto" class="partner-logo" src="../assets/images/partners/{{partner.img}}"
+        	<a style="display: block; border-bottom:none; padding-right: 10px; padding-bottom: 5px" href="{{partner.url}}"><img  style="height:90px;width: auto" class="partner-logo" src="../assets/images/partners/{{partner.img}}"
         	 title="{{partner.name}}" alt="{{partner.name}}"></a>
         	 {% endfor%}
         </article>
