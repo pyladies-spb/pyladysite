@@ -16,6 +16,10 @@ def faq():
 def partners():
     return send_from_directory(generated_site,'partners/index.html')
 
+@app.route('/resources/')
+def resources():
+    return send_from_directory(generated_site,'resources/index.html')
+
 @app.route('/CodeOfConduct/')
 def coc():
     return send_from_directory(generated_site,'CodeOfConduct/index.html')
