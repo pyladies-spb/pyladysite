@@ -7,7 +7,7 @@ category: [resources]
 
 Хочешь дополнить список — [напиши нам](mailto:info@pyladies.com)!
 
-## Web-разработка
+**Web-разработка**
 
 Django — один из самых популярных фреймворков для создания web-приложений на Python.
 Начать можно с [официального туториала Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) или с [туториала Django Girls](https://tutorial.djangogirls.org/ru/) по созданию блога, который написан нашим дружественным сообществом. Есть ещё замечательная книга [Two Scoops of Django: Best Practices For Django 1.11](https://www.twoscoopspress.com/collections/django/products/two-scoops-of-django-1-11), в числе авторов которой — соосновательница глобального комьюнити PyLadies.
@@ -19,7 +19,7 @@ Django — один из самых популярных фреймворков 
 * [OpenShift](http://openshift.redhat.com/)
 * [Google App Engine](http://code.google.com/appengine/)
 
-## Другие web-фреймворки
+**Другие web-фреймворки**
 
 Не Django единым! Экспериментируй и с другими библиотеками:
 
@@ -27,7 +27,7 @@ Django — один из самых популярных фреймворков 
 * [Flask](http://flask.pocoo.org/)
 * [Огромный список фреймворков](http://wiki.python.org/moin/WebFrameworks) в Python wiki
 
-## Туториалы и мануалы
+**Туториалы и мануалы**
 
 * [Beginner’s Guide to Python](https://wiki.python.org/moin/BeginnersGuide): Подойдёт даже для тех, кто никогда не программировал
 * [Intermediate Python](https://wiki.python.org/moin/BeginnersGuide)
