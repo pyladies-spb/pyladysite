@@ -778,6 +778,7 @@ section#post aside time {
 /*****************************************  SIDEBAR STYLES  ************************************/
 
 .sidebar {
+  display: none;
   width: 320px;
   float: right;
   margin-top: 70px;
