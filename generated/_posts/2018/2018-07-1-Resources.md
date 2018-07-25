@@ -5,7 +5,7 @@ tags: [resources]
 category: [resources]
 ---
 
-Хочешь дополнить список — [напиши нам](mailto:info@pyladies.com)!
+Хочешь дополнить список — [напиши нам](mailto:spb@pyladies.com)!
 
 **Web-разработка**
 
