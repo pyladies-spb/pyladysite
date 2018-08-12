@@ -23,10 +23,8 @@
 
 	  # создать virtualenv с python 2.7
 	  
-	  pip install generated/requirements.txt
-	
+	  pip install -r generated/requirements.txt
 	  cd generated
-	  
 	  mynt gen -f _site && mynt serve _site
 
 После изменения шаблонов в ```generated\_templates``` 
@@ -37,11 +35,8 @@
 	
 	# создать virtualenv с python 3.6
 	
-	pip install requirements.txt
-	
-	FLASK_APP=app.py
-	  
-	flask run
+	pip install -r requirements.txt
+	FLASK_APP=app.py flask run
 	
 После перегенерации и пуша в мастер-ветку изменения автоматом поднянутся 
 на [Heroku](https://www.heroku.com/). 
