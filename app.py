@@ -26,7 +26,7 @@ def coc():
 
 
 @app.route('/publications/')
-def partners():
+def publications():
     return send_from_directory(generated_site, 'publications/index.html')
 
 
