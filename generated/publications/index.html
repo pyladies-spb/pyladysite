@@ -1,0 +1,15 @@
+{% extends "site.html" %}
+{% block title %}Публикации о нас{% endblock %}
+{% block content %}
+    <section id="archive">
+        {% for post in posts %}
+            {% if 'publications' in post.category %}
+            <h1>{{ post.title }}</h1>
+                <article>
+                    <h2>{{ post.title }}</h2>
+                        <p>{{ post.content }}</p>
+                </article>
+            {% endif %}
+        {% endfor %}
+    </section>
+{% endblock %}
