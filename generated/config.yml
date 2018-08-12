@@ -35,4 +35,8 @@ partners:
 
     - name:    DataArt
       url:  https://www.dataart.ru/
-      img: DataArt.png      
+      img: DataArt.png   
+         
+    - name:    Sprintbox
+      url:  https://sprintbox.ru/
+      img: sprintbox.png  
