@@ -1,6 +1,6 @@
 ---
 layout: post.html
-title: "Publications"
+title: "Публикации о нас"
 tags: [publications]
 category: [publications]
 ---
