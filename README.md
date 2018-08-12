@@ -1,21 +1,27 @@
 # Сайт PyLadies Spb
-Сделан на статическом генераторе Mynt.
+Сделан на генераторе статики [Mynt](http://mynt.uhnomoli.com/), 
+сёрвится через [Flask](http://flask.pocoo.org/).
 
-Сервится через Flask.
+Чтобы редактировать содержимое: 
 
-Для редактирования содержимого: 
+- Главная страница ```generated\_posts\2018\2018-07-1-About```
+- Code of Conduct ```generated\_posts\2018\2018-07-1-Code-of-Conduct```
+- FAQ ```generated\_posts\2018\2018-07-1-FAQ.md```
 
-Главная страница ```generated\_posts\2018\2018-07-1-About```
+Чтобы добавить партнёра, обновите partners в ```generated\config.yml```
 
-Code of Conduct ```generated\_posts\2018\2018-07-1-Code-of-Conduct```
+Чтобы добавить новую страничку:
 
-FAQ ```generated\_posts\2018\2018-07-1-FAQ.md```
-
-Что бы добавить партнера, нужно обновить partners в ```generated\config.yml```
+1. создайте `.md`-файл в `generated/_posts/2018/`
+1. создайте директорию с `index.html`
+(подобно тому как это сделано в случае `generated/CodeOfConduct/index.html`, 
+например)
+1. добавьте пункт меню в `generated/_templates/site.html`
+1. добавьте маршрут в `app.py`
 
 Генерация страниц: 
 
-	  создать virtualenv с python 2.7
+	  # создать virtualenv с python 2.7
 	  
 	  pip install generated/requirements.txt
 	
@@ -23,13 +29,13 @@ FAQ ```generated\_posts\2018\2018-07-1-FAQ.md```
 	  
 	  mynt gen -f _site && mynt serve _site
 
-После изменения шаблонов в ```generated\_templates``` или параметров в ```generated\config.yml``` страницы обязательно перегенерить перед коммитом. 
+После изменения шаблонов в ```generated\_templates``` 
+или параметров в ```generated\config.yml``` 
+страницы обязательно перегенерить перед коммитом. 
 
-После перегенерации и коммита изменения автоматом поднянуться на Heroku. 
-
-Для того, что бы проверить, корректно ли flask сервит страницы: 
+Чтобы проверить, корректно ли flask сёрвит страницы: 
 	
-	создать virtualenv с python 3.6
+	# создать virtualenv с python 3.6
 	
 	pip install requirements.txt
 	
@@ -37,3 +43,5 @@ FAQ ```generated\_posts\2018\2018-07-1-FAQ.md```
 	  
 	flask run
 	
+После перегенерации и пуша в мастер-ветку изменения автоматом поднянутся 
+на [Heroku](https://www.heroku.com/). 
