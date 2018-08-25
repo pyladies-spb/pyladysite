@@ -36,6 +36,6 @@ Django — один из самых популярных фреймворков 
 * [Learn Python на Codecademy](https://www.codecademy.com/learn/learn-python): Ещё один бесплатный туториал
 * [tryGit](http://try.github.com/levels/1/challenges/1): Подходящий для новичков туториал по Git от GitHub и Code School;
 * [Real Python](https://realpython.com/the-model-view-controller-mvc-paradigm-summarized-with-legos/): Объяснение MVC-модели на примере лего;
-* [Codewars](https://www.codewars.com/) геймефицированные задачи по разным языкам, включая Python, можно найти небольшие туториалы, подкрепленные практикой
+* [Codewars](https://www.codewars.com/) геймифицированные задачи по разным языкам, включая Python, можно найти небольшие туториалы, подкрепленные практикой
 * [Погружение в Python](https://ru.coursera.org/learn/diving-in-python): бесплатный курс на Cursera от Московского физико-технического института и Mail.Ru Group на русском языке (подойдет тем, кто уже знает основы программирования на любом другом языке)
 
