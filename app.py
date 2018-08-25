@@ -15,11 +15,6 @@ def faq():
     return send_from_directory(generated_site, 'faq/index.html')
 
 
-@app.route('/resources/')
-def resources():
-    return send_from_directory(generated_site, 'resources/index.html')
-
-
 @app.route('/CodeOfConduct/')
 def coc():
     return send_from_directory(generated_site, 'CodeOfConduct/index.html')
@@ -28,6 +23,16 @@ def coc():
 @app.route('/publications/')
 def publications():
     return send_from_directory(generated_site, 'publications/index.html')
+
+
+@app.route('/online/')
+def online():
+    return send_from_directory(generated_site, 'online/index.html')
+
+
+@app.route('/resources/')
+def resources():
+    return send_from_directory(generated_site, 'resources/index.html')
 
 
 @app.route('/partners/')

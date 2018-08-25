@@ -1,6 +1,6 @@
 ---
 layout: post.html
-title: "Ресурсы"
+title: "Полезные ресурсы"
 tags: [resources]
 category: [resources]
 ---
