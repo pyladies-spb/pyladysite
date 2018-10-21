@@ -36,7 +36,8 @@
 	# создать virtualenv с python 3.6
 	
 	pip install -r requirements.txt
-	FLASK_APP=app.py flask run
+	FLASK_APP=app.py 
+	flask run
 	
 После перегенерации и пуша в мастер-ветку изменения автоматом поднянутся 
 на [Heroku](https://www.heroku.com/). 
