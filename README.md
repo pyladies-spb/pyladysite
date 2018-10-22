@@ -1,4 +1,6 @@
 # Сайт PyLadies Spb
+
+## НЕ ПРАВЬТЕ ДАННЫЙ САЙТ, У НАС УЖЕ ПРАКТИЧЕСКИ ГОТОВ НОВЫЙ
 Сделан на генераторе статики [Mynt](http://mynt.uhnomoli.com/), 
 сёрвится через [Flask](http://flask.pocoo.org/).
 
